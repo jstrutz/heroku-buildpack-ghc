@@ -44,6 +44,7 @@ fi
 echo "-----> Linking libgmp.so in an accessible place"
 mkdir -p $WORKING_HOME/vendor/ghc-libs
 ln -s /usr/lib/libgmp.so.3 $WORKING_HOME/vendor/ghc-libs/libgmp.so
+ln -s /usr/lib/libgmp.so.3 $WORKING_HOME/vendor/ghc-libs/libgmp.so.3
 
 export LIBRARY_PATH=$WORKING_HOME/vendor/ghc-libs:/usr/lib:$LIBRARY_PATH
 export LD_LIBRARY_PATH=$LIBRARY_PATH
